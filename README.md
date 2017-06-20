@@ -1,24 +1,18 @@
 # waylon reed application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+this is a ruby on rails 5 application
 
-Things you may want to cover:
+### features
 
-* Ruby version
+-real time chat
+-blogs 
+-drag and drop
+-porfolio
 
-* System dependencies
+### code example
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby
+def_my_great_method
+pus "here it is "
+end
+```
