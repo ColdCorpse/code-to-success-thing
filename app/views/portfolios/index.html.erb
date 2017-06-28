@@ -5,5 +5,5 @@
  <p><%= portfolios_item.title %></p>
  <p><%= portfolios_item.subtitle %></p>
  <p><%= portfolios_item.body %></p>
-<%= image_tag portfolios_item.thumb_image %>
+<%= image_tag portfolios_item.thumb_image if !portfolios_item.thumb_image.nil? %>
 <% end %>
