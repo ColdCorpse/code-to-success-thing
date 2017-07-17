@@ -1,26 +1,47 @@
+3.times do |topic|
+  Topic.create!(
+    title:" Topic #{topic}"
+    )
+  
+end
+
+puts"3 Topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
-    body: "testing "
-)  end
+    body: "testing ",
+    topic_id: Topic.last.id
+) 
+end
 
 
 puts "10 blog posts created"
 5.times do |skill|
-  Skill.create!(
-    title: "Rails #{skill}",
+  Skill.create!(    title: "Rails #{skill}",
     percent_utilized: 15 
     )
   end
   puts "5 skills created"
   
-  9.times do |portfolio_item|
+  8.times do |portfolio_item|
     Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
-    subtitle: "my great service",
+    subtitle: "Ruby on rails",
     body:  "juhhhfuehfegygyefuafsukh",
     main_image:  "http://placehold.it/500x600", 
     thumb_image: "http://placehold.it/350x150"
     )
   end
-   puts "9 portfolio items created"
+   puts "8 portfolio items created"
+   
+    1.times do |portfolio_item|
+    Portfolio.create!(
+    title: "Portfolio title: #{portfolio_item}",
+    subtitle: "angular",
+    body:  "cvndskjvndjkbvsjdkv",
+    main_image:"http://placehold.it/500x600", 
+    thumb_image: "http://placehold.it/350x150"
+    )
+  end
+   puts "1 portfolio items created"
