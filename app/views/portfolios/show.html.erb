@@ -1,5 +1,10 @@
-<h1>shoe</h1>
+<h1>This Thing:</h1>
 <%= image_tag @portfolio_item.main_image %>
 <%= @portfolio_item.title %>
 <em><%= @portfolio_item.title %></em>
 <p><%= @portfolio_item.body %></p>
+<h2>technologies used</h2>
+<% @portfolio_item.technologies.each do |t| %>
+<p><%= t.name %></p>
+<% end %>
+
