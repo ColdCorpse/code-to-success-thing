@@ -1,7 +1,7 @@
-<h1>This Thing:</h1>
+<h1><u>This Thing</u></h1>
 <%= image_tag @portfolio_item.main_image %>
 <%= @portfolio_item.title %>
-<em><%= @portfolio_item.title %></em>
+<em><%= @portfolio_item.subtitle %></em>
 <p><%= @portfolio_item.body %></p>
 <h2>technologies used</h2>
 <% @portfolio_item.technologies.each do |t| %>
