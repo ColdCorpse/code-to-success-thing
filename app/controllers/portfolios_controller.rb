@@ -1,8 +1,9 @@
 class PortfoliosController < ApplicationController
+    layout "portfolio"
   def index
     @portfolio_items = Portfolio.all
   end
-  
+
   def new
     @portfolio_item = Portfolio.new
     3.times { @portfolio_item.technologies.build}
