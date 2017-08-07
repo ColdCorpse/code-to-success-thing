@@ -4,8 +4,9 @@ layout "blog"
   # GET /blogs
   # GET /blogs.json
   def index
+ 
     @blogs = Blog.all
-    @page_title =" My Porftolio Blog"
+   @page_title =" My Porftolio Blog"
   end
 
   # GET /blogs/1
