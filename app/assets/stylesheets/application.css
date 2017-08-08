@@ -1,8 +1,1 @@
-body
-{
-  background-color:#a40d0d;
-}
-.top a {
-  color: #697d47
-;
-}
+@import "bootstrap";

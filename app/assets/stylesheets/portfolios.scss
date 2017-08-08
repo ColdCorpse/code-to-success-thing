@@ -1,11 +1,4 @@
 // Place all the styles related to the portfolios controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body{
-  background-color: #d73c3c;
-  color: #624bb2 ;
-}
-
-.top a {
-  color: #38ca3d;
-}
+@import "bootstrap"
