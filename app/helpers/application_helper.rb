@@ -15,4 +15,7 @@ module ApplicationHelper
        greeting = "Thanks for vitsiting me from #{session[:source]} and you are on the #{layout_name} "
        content_tag(:p, greeting, class: "source-greeting")
      end end
+     def copyright_generator
+       @copyright=AppViewTool::Renderer.copyright 'Unknown Subject','All rights reserved'  
+     end
 end
