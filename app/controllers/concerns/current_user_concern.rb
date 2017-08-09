@@ -7,6 +7,13 @@ extend ActiveSupport::Concern
    end
   
   def guest_user
-     OpenStruct.new(first_name: "Guest", last_name: "User", email: "Guest@Examples.com")  
+ guest =GuestUser.new
+ guest.name = "Guest user"
+  guest.first_name = "Guest"
+  guest.last_name = "user"
+  guest.email = "guest@guest.com"
+guest
+
+
   end
 end
